@@ -10,19 +10,10 @@ document.querySelectorAll('.dropdown').forEach((dropdown) => {
 });
 
 window.addEventListener('scroll', function() {
-    var toTop = document.getElementById('to-top');
-
-    if (this.pageYOffset > 200) {
-        toTop.style.display = 'inline-block';
+    var footer = document.querySelector('.footer');
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.style.bottom = '0';
     } else {
-        toTop.style.display = 'none';
+        footer.style.bottom = '-100px';
     }
-});
-
-document.getElementById('to-top').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 });

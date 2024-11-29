@@ -6,7 +6,7 @@ html{
     align-items: center;
     justify-content: space-between;
     padding: 5px 10px;
-    background-color: #f7f7f7;
+    background-color: white;
     border-bottom: 2px solid #ffffff;
     flex-wrap: nowrap;
 }
